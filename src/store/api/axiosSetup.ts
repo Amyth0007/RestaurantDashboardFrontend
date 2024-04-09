@@ -5,7 +5,8 @@ import { GenericResponse } from "./types";
 // const BASE_URL = "https://backendetopos.azurewebsites.net/"; //Main URL
 // const BASE_URL = "https://etoposbe.azurewebsites.net/"; //Main Current URL
 // const BASE_URL = "https://etoposnewtest.azurewebsites.net/"; //Main Current URL
-const BASE_URL = "https://etoposbe.vercel.app/"; //Test Current URL
+// const BASE_URL = "https://etoposbe.vercel.app/"; //Test Current URL
+const BASE_URL = "https://bhopole.azurewebsites.net/"; //Test Current URL
 
 //const BASE_URL = "https://etoposnewtest.azurewebsites.net/"; //Main Current URL
 
