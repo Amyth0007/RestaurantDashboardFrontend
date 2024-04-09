@@ -78,10 +78,17 @@ export const Waiter = () => {
         }
       }}>
         <TopBar title={"Table Booking"} backUrl="/" home={true}>
-          <Stack direction={"row"} sx={{...flexBox(), p:1, pt:2, gap:1, flex:1}}>
+          <Stack direction={"row"} sx={{justifyContent:'end', p:1, pt:2,pr:{
+            xs:1,
+            md:5
+          }, gap:1, flex:1}}>
             <FloorStructure infoSelected={infoSelected} setinfoSelected={setinfoSelected} restroDetails={restroDetails?.restaurant?.floors} />
-            <Tooltip title="Help">
-              <IconButton onClick={() => setOpenModel(true)}><QuestionMarkIcon /></IconButton>
+            <Tooltip title="Help" sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+              display: 'flex',
+            }}> 
+              <IconButton color="info" onClick={() => setOpenModel(true)}><QuestionMarkIcon /></IconButton>
             </Tooltip>
           </Stack>
 
