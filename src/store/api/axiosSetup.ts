@@ -285,8 +285,8 @@ export const getorderById = async (headerAuth, orderId, restaurantId) => {
   return response;
 };
 export const getorderHistory = async (props) => {
-  const response = await authApi.get(
-    `order/getOrderHistory?restaurantId=${props.restaurantId}&startDate=${props.startDate}&endDate=${props.endDate}&pageNumber=${props.pageNumber}&pageSize=${props.pageSize}`,
+  const response = await axios.get(
+    `https://etoposbe.vercel.app/order/getOrderHistory?restaurantId=${props.restaurantId}&startDate=${props.startDate}&endDate=${props.endDate}&pageNumber=${props.pageNumber}&pageSize=${props.pageSize}`,
     {
       headers: {
         Authorization: "Bearer " + props.headerAuth, //the token is a variable which holds the token
